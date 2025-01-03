@@ -41,8 +41,12 @@ const DataGrid: React.FC<DataGridProps> = ({ data }) => {
 
   const handleDownload = () => {
     const selectedData = selectedRows.map((rowId) => {
-      const { id, ...rowData } = momoizedTableData.find(row => row.id === rowId)
-      return rowData
+      const rowData = momoizedTableData.find(row => row.id === rowId)
+      if (rowData) {
+        const { id, ...rest } = rowData;
+        return rest;
+      }
+      return null;
     }).filter(Boolean);
 
     console.log({ selectedData })
