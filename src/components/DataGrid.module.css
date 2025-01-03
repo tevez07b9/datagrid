@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.table th,
+.table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #cacad5;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.table tr:hover {
+  background-color: #aaaaaa;
+}
+
+p {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
